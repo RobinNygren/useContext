@@ -7,6 +7,8 @@ import TeacherList from "./TeacherList";
 import { GlobalStateContext } from "./GlobalStateContext";
 import GlobalList from "./GlobalList";
 import { GlobalState } from "./GlobalStateContext";
+import SearchTeacher from "./SearchTeacher";
+import Vehicles from "./Vehicles";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <h1>Global Context</h1>
         <GlobalList />
       </GlobalStateContext.Provider>
+      <SearchTeacher />
+      <Vehicles />
     </>
   );
 }
