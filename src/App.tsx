@@ -9,6 +9,9 @@ import GlobalList from "./GlobalList";
 import { GlobalState } from "./GlobalStateContext";
 import SearchTeacher from "./SearchTeacher";
 import Vehicles from "./Vehicles";
+import PizzaCalc from "./PizzaCalc";
+import MonsterContextProvider from "./MonsterContextProvider";
+import Monster from "./Monster";
 
 function App() {
   return (
@@ -27,6 +30,11 @@ function App() {
       </GlobalStateContext.Provider>
       <SearchTeacher />
       <Vehicles />
+      <PizzaCalc />
+      <MonsterContextProvider>
+        <h1>Monsters</h1>
+        <Monster />
+      </MonsterContextProvider>
     </>
   );
 }
